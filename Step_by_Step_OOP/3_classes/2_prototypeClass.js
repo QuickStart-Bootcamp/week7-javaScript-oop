@@ -10,10 +10,21 @@ class Car {
     this.model = model;
     this.year = year;
   }
+  drive () {
+    console.log (`this car is driving`)
+  }
+  stop () {
+    console.log (`this car is stop`)
+  }
 }
 
-let car1 = new Car ("toyota", "corolla", "red")
+let car1 = new Car ("toyota1", "corolla1", "red")
+let car2 = new Car ("toyota2", "corolla2", "blue")
+let car3 = new Car ("toyota3", "corolla3", "green")
+
 console.log (car1)
+console.log (car2)
+console.log (car3)
 
 
 

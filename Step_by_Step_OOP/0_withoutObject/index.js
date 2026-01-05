@@ -1,24 +1,24 @@
-// Brand   Model     Color
-// Toyota  Corolla   Red
-// Honda   Civic     Blue
-// Ford    Mustand   Black
+// Brand     Model     Color
+// Toyota    Corolla   Red
+// Honda     Civic     Blue
+// Ford      Mustand   Black
+// Ferrari   458       White  
 
 // What is this in object: this refers to the object that is calling the method.
 // It allows the method to access properties of the same object it belongs to.
+
 
 let car1 = {
   brand: "Toyota",
   model: "Corolla",
   color: "red",
-  drive() {
-    console.log ("This car is driving")
-  },
-  stop() {
-    console.log ("This car is being stopped")
+  drive: function() {
+    console.log ("Car is driving")
   }
 }
 
+car1.color = "blue"
+
 console.log (car1.brand)
-car1.drive()
-car1.stop()
+
 
