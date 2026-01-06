@@ -12,13 +12,33 @@ let car1 = {
   brand: "Toyota",
   model: "Corolla",
   color: "red",
-  drive: function() {
-    console.log ("Car is driving")
+  drive() {
+    console.log ("the car is driving")
   }
 }
 
-car1.color = "blue"
+let car2 = {
+  brand: "Honda",
+  model: "Civic",
+  color: "black",
+  drive() {
+    console.log ("the car is driving")
+  }
+}
 
-console.log (car1.brand)
+let car3 = {
+  brand: "Ford",
+  model: "Mustand",
+  color: "white",
+  drive() {
+    console.log ("the car is driving")
+  }
+}
+
+console.log (car1.color)
+console.log (car2.color)
+console.log (car3.color)
+
+car1.color = red
 
 

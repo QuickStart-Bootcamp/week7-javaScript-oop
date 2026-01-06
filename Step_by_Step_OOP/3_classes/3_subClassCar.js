@@ -23,44 +23,58 @@ class Car {
   }
 }
 
-
-class ElectricCar extends Car {
+class ElectricCar {
   constructor (brand, model, color, batteryLevel) {
-    super (brand, model, color)
+    this.brand = brand
+    this.model = model
+    this.color = color
     this.batteryLevel = batteryLevel
   }
-  checkBatteryLevel() {
-    console.log ("The battery level is checked")
+  drive() {
+    console.log (`Car class: ${this.brand}, ${this.model}, ${this.color} , ${this.batteryLevel } is driving`)
+  }
+  stop() {
+    return (`Car class: ${this.brand}, ${this.model}, ${this.color} , , ${this.batteryLevel } has stopped`)
+  }
+} 
+
+class SportCar {
+  constructor (brand, model, color, topSpeed) {
+    this.brand = brand
+    this.model = model
+    this.color = color
+    this.topSpeed = topSpeed
+  }
+  drive() {
+    console.log (`Car class: ${this.brand}, ${this.model}, ${this.color}, ${this.topSpeed} is driving`)
+  }
+  stop() {
+    return (`Car class: ${this.brand}, ${this.model}, ${this.color}, ${this.topSpeed} has stopped`)
   }
 }
 
-class SportCar extends Car {
-  constructor (brand, model, color, topspeed) {
-    super (brand, model, color)
-    this.topspeed = topspeed
-  }
-  drive () {
-    console.log (`This sportCar with ${this.brand} is amazing`)
-  }
-}
-
-class LuxuryCar extends Car {
+class LuxuryCar {
   constructor (brand, model, color, soundSystem) {
-    super (brand, model, color)
+     this.brand = brand
+    this.model = model
+    this.color = color
     this.soundSystem = soundSystem
   }
-  stop () {
-    return "Luxury car do not stop"
+   drive() {
+    console.log (`Car class: ${this.brand}, ${this.model}, ${this.color} is driving`)
+  }
+  stop() {
+    return (`Car class: ${this.brand}, ${this.model}, ${this.color} has stopped`)
   }
 }
 
+let ElectricCar1 = new ElectricCar ("ELBrand1", "ELModel1", "ELColor1", "1234")
+let SportCar1 = new SportCar ("sportBrand", "sportModel", "sportColor", "123")
+let LuxuryCar1 = new LuxuryCar ("luxuryBrand1", "LuxuryModel1", "LuzuryColor1", "100")
 
-let ElectricCar1 = new ElectricCar ("ECbrand1", "ECmodel1", "ECcolor1", "ECBatteryLevel1")
-let SportCar1 = new SportCar ("SBrand1", "SModel1", "SColor1", "250")
-let LuxuryCar1 = new LuxuryCar ("LXBrand1", "LXModel1", "LXColor1", "sound system 232")
 
-console.log (ElectricCar1)
-console.log (SportCar1)
-console.log (LuxuryCar1.stop())
+console.log (` ${ElectricCar1.brand} ${ElectricCar1.model} ${ElectricCar1.color} ${ElectricCar1.batteryLevel} `)
+console.log (` ${SportCar1.brand} ${SportCar1.model} ${SportCar1.color} ${SportCar1.topSpeed} `)
+console.log (` ${LuxuryCar1.brand} ${LuxuryCar1.model} ${LuxuryCar1.color} ${LuxuryCar1.soundSystem} `)
 
 

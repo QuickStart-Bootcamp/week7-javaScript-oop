@@ -26,5 +26,8 @@ console.log (car1)
 console.log (car2)
 console.log (car3)
 
+console.log (car1.brand)
+console.log (car1.driving())
+
 
 
