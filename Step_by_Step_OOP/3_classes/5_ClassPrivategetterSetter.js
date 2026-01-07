@@ -1,3 +1,6 @@
+// A getter is a method that lets you read a property in a controlled way.
+// A setter is a method that lets you change a property in a controlled way.
+
 class Car {
   // private properties
   #fuelLevel

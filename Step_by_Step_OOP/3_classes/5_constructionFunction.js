@@ -32,3 +32,4 @@ let car3 = new Car ("brand3", "model3", "color3")
 console.log (car1)
 console.log (car2)
 console.log (car3)
+
