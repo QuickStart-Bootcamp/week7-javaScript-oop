@@ -31,7 +31,7 @@ class ElectricCar {
     this.batteryLevel = batteryLevel
   }
   drive() {
-    console.log (`Car class: ${this.brand}, ${this.model}, ${this.color} , ${this.batteryLevel } is driving`)
+    return `Car class: ${this.brand}, ${this.model}, ${this.color} , ${this.batteryLevel } is driving`
   }
   stop() {
     return (`Car class: ${this.brand}, ${this.model}, ${this.color} , , ${this.batteryLevel } has stopped`)
@@ -78,3 +78,13 @@ console.log (` ${SportCar1.brand} ${SportCar1.model} ${SportCar1.color} ${SportC
 console.log (` ${LuxuryCar1.brand} ${LuxuryCar1.model} ${LuxuryCar1.color} ${LuxuryCar1.soundSystem} `)
 
 
+  
+class Abc extends Car {
+  constructor (brand, model, color, soundSystem) {
+    super (brand, model, color)
+    this.soundSystem = soundSystem
+  }
+}
+
+let Abc1 = new LuxuryCar ("luxuryBrand1", "LuxuryModel1", "LuzuryColor1", "100")
+console.log (Abc1.drive())
